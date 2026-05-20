@@ -563,6 +563,29 @@
       font-size: 13px;
     }
 
+    .matrix-item.has-photo {
+      min-height: 144px;
+      grid-template-columns: 150px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .camera-photo {
+      width: 150px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .camera-copy {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
     .comparison {
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -605,6 +628,21 @@
     .comparison-row:first-child .row-head {
       color: var(--white);
       background: transparent;
+    }
+
+    .construction-visual {
+      margin: 0 0 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .construction-visual img {
+      width: 100%;
+      aspect-ratio: 16 / 5.4;
+      object-fit: cover;
+      object-position: center 42%;
     }
 
     .flow {
@@ -959,6 +997,19 @@
       .contact-value-large {
         font-size: 25px;
       }
+
+      .construction-visual img {
+        aspect-ratio: 16 / 10;
+        object-position: 58% center;
+      }
+
+      .matrix-item.has-photo {
+        grid-template-columns: 1fr;
+      }
+
+      .camera-photo {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -1172,17 +1223,26 @@
         <div class="camera-matrix">
           <div class="matrix-group">
             <div class="matrix-title">標準仕様</div>
-            <div class="matrix-item">
-              <span class="type-mark">B</span>
-              <div><strong>バレット型</strong><span>屋外や入口に。見えていること自体が抑止につながります。</span></div>
+            <div class="matrix-item has-photo">
+              <img class="camera-photo" src="assets/camera-bullet.png" alt="バレット型防犯カメラ" />
+              <div class="camera-copy">
+                <span class="type-mark">B</span>
+                <div><strong>バレット型</strong><span>屋外や入口に。見えていること自体が抑止につながります。</span></div>
+              </div>
             </div>
-            <div class="matrix-item">
-              <span class="type-mark">D</span>
-              <div><strong>ドーム型</strong><span>天井設置に。店内や事務所で目立ちにくく設置できます。</span></div>
+            <div class="matrix-item has-photo">
+              <img class="camera-photo" src="assets/camera-dome.png" alt="ドーム型防犯カメラ" />
+              <div class="camera-copy">
+                <span class="type-mark">D</span>
+                <div><strong>ドーム型</strong><span>天井設置に。店内や事務所で目立ちにくく設置できます。</span></div>
+              </div>
             </div>
-            <div class="matrix-item">
-              <span class="type-mark">P</span>
-              <div><strong>PTZ型</strong><span>パン・チルト・ズームで広範囲を確認できます。</span></div>
+            <div class="matrix-item has-photo">
+              <img class="camera-photo" src="assets/camera-ptz.png" alt="PTZ型防犯カメラ" />
+              <div class="camera-copy">
+                <span class="type-mark">P</span>
+                <div><strong>PTZ型</strong><span>パン・チルト・ズームで広範囲を確認できます。</span></div>
+              </div>
             </div>
           </div>
 
@@ -1258,6 +1318,10 @@
             壁面、天井、天井裏、パイプスペースなどを確認し、できるだけ露出が少ない経路を選びます。露出部や屋外は材料を選び、配線を保護します。
           </p>
         </div>
+
+        <figure class="construction-visual">
+          <img src="assets/construction-installation.png" alt="防犯カメラの取付作業イメージ" />
+        </figure>
 
         <div class="flow">
           <article class="flow-step">
