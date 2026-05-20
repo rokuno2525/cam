@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="株式会社ニコニコテクノサービスの防犯カメラご提案資料。AIカメラ、国内メーカー、低コスト見守り、配線方式、施工、保証までわかりやすくご案内します。" />
+  <title>防犯カメラ ご提案資料 | 株式会社ニコニコテクノサービス</title>
+  <style>
+    :root {
+      --ink: #18212b;
+      --muted: #637083;
+      --line: #dfe5eb;
+      --paper: #f6f3ee;
+      --white: #ffffff;
+      --green: #2f5d50;
+      --green-deep: #183d37;
+      --steel: #355a72;
+      --amber: #b57923;
+      --amber-soft: #f1ddbd;
+      --blue-soft: #e8f0f5;
+      --shadow: 0 18px 50px rgba(24, 33, 43, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: "Hiragino Sans", "Yu Gothic", "YuGothic", "Meiryo", sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(223, 229, 235, 0.9);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 40px));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 260px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: linear-gradient(140deg, var(--green) 0%, var(--steel) 100%);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+
+    .short-name {
+      display: none;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.3;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+
+    .tel-link {
+      color: var(--green);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .button {
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.2;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-primary {
+      color: var(--white);
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .button-primary:hover {
+      background: var(--green-deep);
+      border-color: var(--green-deep);
+    }
+
+    .button-secondary {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.9);
+      border-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .button-ghost {
+      color: var(--green);
+      background: var(--white);
+      border-color: var(--line);
+    }
+
+    .hero {
+      min-height: 650px;
+      display: grid;
+      align-items: end;
+      color: var(--white);
+      background-image:
+        linear-gradient(90deg, rgba(12, 24, 31, 0.92) 0%, rgba(12, 24, 31, 0.72) 42%, rgba(12, 24, 31, 0.25) 74%, rgba(12, 24, 31, 0.15) 100%),
+        url("assets/security-camera-hero.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 82px 0 72px;
+    }
+
+    .eyebrow {
+      color: var(--amber-soft);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .hero h1 {
+      max-width: 740px;
+      margin: 18px 0 18px;
+      font-size: 44px;
+      line-height: 1.32;
+      font-weight: 900;
+    }
+
+    .hero-lead {
+      max-width: 680px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 17px;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-proof {
+      width: min(900px, 100%);
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+    }
+
+    .proof-item {
+      padding: 22px 24px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .proof-item:last-child {
+      border-right: 0;
+    }
+
+    .proof-label {
+      color: var(--amber-soft);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .proof-value {
+      margin-top: 4px;
+      font-size: 21px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    section {
+      padding: 84px 0;
+    }
+
+    .band {
+      background: var(--paper);
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1.15fr);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-kicker {
+      margin: 0 0 10px;
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 32px;
+      line-height: 1.35;
+      font-weight: 900;
+    }
+
+    .section-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .choice-card {
+      min-height: 220px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 10px 28px rgba(24, 33, 43, 0.05);
+    }
+
+    .choice-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .choice-num {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .mini-camera {
+      width: 44px;
+      height: 30px;
+      border-radius: 7px;
+      background: var(--blue-soft);
+      border: 2px solid rgba(53, 90, 114, 0.35);
+      position: relative;
+    }
+
+    .mini-camera::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--steel);
+      position: absolute;
+      top: 7px;
+      left: 14px;
+    }
+
+    .mini-camera::after {
+      content: "";
+      width: 20px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(53, 90, 114, 0.35);
+      position: absolute;
+      right: -15px;
+      top: 10px;
+    }
+
+    .choice-card h3,
+    .maker-card h3,
+    .spec-panel h3,
+    .warranty-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.45;
+    }
+
+    .choice-card p,
+    .maker-card p,
+    .spec-panel p,
+    .warranty-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .maker-layout {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .maker-note {
+      position: sticky;
+      top: 96px;
+      padding: 28px;
+      border-radius: 8px;
+      color: var(--white);
+      background: var(--green-deep);
+      box-shadow: var(--shadow);
+    }
+
+    .maker-note h3 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    .maker-note p {
+      margin: 0 0 18px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+    }
+
+    .maker-note ul {
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+    }
+
+    .maker-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .maker-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .maker-card header {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--steel);
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .badge-amber {
+      color: #7b4b0c;
+      background: var(--amber-soft);
+    }
+
+    .maker-link {
+      margin-top: 16px;
+      color: var(--green);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .maker-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .spec-panel {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .spec-panel-dark {
+      color: var(--white);
+      background: var(--steel);
+      border-color: var(--steel);
+    }
+
+    .spec-panel-dark h3,
+    .spec-panel-dark p {
+      color: var(--white);
+    }
+
+    .quality-row {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .quality-box {
+      padding: 18px;
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .quality-box strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .quality-box span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .camera-matrix {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .matrix-group {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .matrix-title {
+      padding: 16px 20px;
+      background: var(--ink);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .matrix-item {
+      min-height: 92px;
+      padding: 18px 20px;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      border-top: 1px solid var(--line);
+    }
+
+    .type-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .matrix-item strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .matrix-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .comparison {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .comparison-row {
+      display: grid;
+      grid-template-columns: 180px repeat(2, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+    }
+
+    .comparison-row:first-child {
+      border-top: 0;
+      color: var(--white);
+      background: var(--green-deep);
+      font-weight: 900;
+    }
+
+    .comparison-row > div {
+      padding: 18px 20px;
+      font-size: 14px;
+    }
+
+    .comparison-row > div + div {
+      border-left: 1px solid var(--line);
+    }
+
+    .comparison-row:first-child > div + div {
+      border-left-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .row-head {
+      color: var(--green);
+      background: #f8faf8;
+      font-weight: 900;
+    }
+
+    .comparison-row:first-child .row-head {
+      color: var(--white);
+      background: transparent;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .flow-step {
+      padding: 28px 22px;
+      background: var(--white);
+      min-height: 250px;
+    }
+
+    .step-index {
+      display: inline-flex;
+      margin-bottom: 24px;
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .flow-step h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .flow-step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .warranty-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .warranty-card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .warranty-feature {
+      color: var(--white);
+      background: var(--green-deep);
+      border-color: var(--green-deep);
+    }
+
+    .warranty-feature h3,
+    .warranty-feature p {
+      color: var(--white);
+    }
+
+    .warranty-meta {
+      display: inline-flex;
+      margin-bottom: 18px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--steel);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .warranty-feature .warranty-meta {
+      color: #7b4b0c;
+      background: var(--amber-soft);
+    }
+
+    .price-list {
+      margin-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .price-item {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 14px;
+    }
+
+    .price {
+      color: var(--amber-soft);
+      font-size: 22px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .notice {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(181, 121, 35, 0.08);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .cta {
+      padding: 72px 0;
+      color: var(--white);
+      background: var(--ink);
+    }
+
+    .cta-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) minmax(360px, 0.9fr);
+      gap: 44px;
+      align-items: center;
+    }
+
+    .cta h2 {
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 15px;
+    }
+
+    .contact-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .contact-cell {
+      padding: 22px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .contact-cell-wide {
+      grid-column: span 2;
+    }
+
+    .contact-label {
+      margin-bottom: 6px;
+      color: var(--amber-soft);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .contact-value {
+      color: var(--white);
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .contact-value-large {
+      font-size: 30px;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      background: #101820;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 1020px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 620px;
+      }
+
+      .section-head,
+      .maker-layout,
+      .cta-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .maker-note {
+        position: static;
+      }
+
+      .choice-grid,
+      .flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav {
+        width: min(100% - 28px, 1180px);
+        min-height: 66px;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand-sub,
+      .tel-link {
+        display: none;
+      }
+
+      .brand-name {
+        font-size: 13px;
+      }
+
+      .full-name {
+        display: none;
+      }
+
+      .short-name {
+        display: inline;
+      }
+
+      .header-actions .button {
+        min-height: 38px;
+        padding: 9px 12px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 610px;
+        background-position: 58% center;
+      }
+
+      .hero-inner,
+      .container,
+      .cta-inner,
+      .footer-inner {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .hero-inner {
+        padding: 62px 0 42px;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .hero-lead {
+        font-size: 15px;
+      }
+
+      .hero-proof,
+      .choice-grid,
+      .spec-grid,
+      .quality-row,
+      .camera-matrix,
+      .flow,
+      .warranty-grid,
+      .contact-block {
+        grid-template-columns: 1fr;
+      }
+
+      .proof-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .proof-item:last-child {
+        border-bottom: 0;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .section-head {
+        gap: 18px;
+        margin-bottom: 28px;
+      }
+
+      .maker-card header {
+        display: block;
+      }
+
+      .maker-card .badge {
+        margin-top: 10px;
+      }
+
+      .comparison-row {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-row > div + div {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .comparison-row:first-child {
+        display: none;
+      }
+
+      .comparison-row > div:nth-child(2)::before {
+        content: "LAN配線型 / PoE";
+        display: block;
+        margin-bottom: 4px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .comparison-row > div:nth-child(3)::before {
+        content: "同軸方式";
+        display: block;
+        margin-bottom: 4px;
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .contact-cell-wide {
+        grid-column: span 1;
+      }
+
+      .contact-value-large {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="株式会社ニコニコテクノサービス">
+        <span class="brand-mark">NT</span>
+        <span>
+          <span class="brand-name">
+            <span class="full-name">株式会社ニコニコテクノサービス</span>
+            <span class="short-name">ニコニコテクノサービス</span>
+          </span>
+          <span class="brand-sub">防犯カメラ 設計・施工・保守</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="ページ内ナビゲーション">
+        <a href="#selection">選び方</a>
+        <a href="#makers">メーカー</a>
+        <a href="#spec">仕様</a>
+        <a href="#wiring">配線</a>
+        <a href="#construction">工事</a>
+        <a href="#warranty">保証</a>
+      </nav>
+      <div class="header-actions">
+        <a class="tel-link" href="tel:0120695550">0120-69-5550</a>
+        <a class="button button-primary" href="#contact">相談する</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="防犯カメラご提案資料">
+      <div class="hero-inner">
+        <div class="eyebrow">SECURITY CAMERA PROPOSAL</div>
+        <h1>防犯・見守り・AI活用まで、目的に合うカメラ構成をご提案します。</h1>
+        <p class="hero-lead">
+          世界大手メーカーから国内メーカーまで、設置目的・予算・コンプライアンスに合わせて機器を選定。現地調査、配線、取付、画角調整、レコーダー設定、保証まで一括で対応します。
+        </p>
+        <div class="hero-actions" aria-label="主要アクション">
+          <a class="button button-primary" href="#contact">無料相談を依頼</a>
+          <a class="button button-secondary" href="#makers">メーカー比較を見る</a>
+        </div>
+        <div class="hero-proof" aria-label="提案の特徴">
+          <div class="proof-item">
+            <div class="proof-label">SELECT</div>
+            <div class="proof-value">AI重視から低コストまで選定</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-label">INSTALL</div>
+            <div class="proof-value">配線・取付・設定を一括施工</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-label">SUPPORT</div>
+            <div class="proof-value">標準1年・最長5年保証</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="selection">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">FIRST DECISION</p>
+            <h2>最初に決めるのは、機種ではなく目的です。</h2>
+          </div>
+          <p class="section-copy">
+            防犯カメラは「高い機器を付けるほど良い」ものではありません。証拠を残したいのか、日常の見守りをしたいのか、AI分析まで使いたいのかで、必要な画質・配線・レコーダー・保証が変わります。
+          </p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card">
+            <div class="choice-top">
+              <span class="choice-num">01 / SECURITY</span>
+              <span class="mini-camera" aria-hidden="true"></span>
+            </div>
+            <h3>防犯・証拠記録</h3>
+            <p>万引き、不審者、トラブル発生時に顔や行動を確認できるよう、画角・解像度・保存期間を設計します。</p>
+          </article>
+          <article class="choice-card">
+            <div class="choice-top">
+              <span class="choice-num">02 / WATCH</span>
+              <span class="mini-camera" aria-hidden="true"></span>
+            </div>
+            <h3>店舗・施設の見守り</h3>
+            <p>営業時間外の確認、離れた拠点の状況把握、事故やクレーム時の事実確認をしやすい構成にします。</p>
+          </article>
+          <article class="choice-card">
+            <div class="choice-top">
+              <span class="choice-num">03 / AI</span>
+              <span class="mini-camera" aria-hidden="true"></span>
+            </div>
+            <h3>AI・業務活用</h3>
+            <p>人数カウント、滞留検知、侵入検知など、映像を防犯以外の業務改善にも使いたい場合に向きます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="makers">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">MANUFACTURERS</p>
+            <h2>目的・予算・社内基準に合わせてメーカーを選びます。</h2>
+          </div>
+          <p class="section-copy">
+            AI機能を重視する場合、国内メーカー指定が必要な場合、見守り中心でコストを抑える場合など、要件に合わせて過不足のないメーカーを選定します。
+          </p>
+        </div>
+
+        <div class="maker-layout">
+          <aside class="maker-note">
+            <h3>メーカー選定の考え方</h3>
+            <p>提案時は、価格だけでなく「誰が映像を見るか」「社内規程に合うか」「将来AI機能を追加するか」まで確認します。</p>
+            <ul>
+              <li>AI分析や高機能化を見据えるならLAN配線型を優先</li>
+              <li>コンプライアンス重視の業種は国内メーカーも検討</li>
+              <li>少台数の見守り用途はコスト重視の構成も可能</li>
+            </ul>
+          </aside>
+
+          <div class="maker-list">
+            <article class="maker-card">
+              <header>
+                <div>
+                  <h3>Axis Communications</h3>
+                  <p>AIに強いグローバル企業のAIカメラ。</p>
+                </div>
+                <span class="badge badge-amber">AI重視</span>
+              </header>
+              <p>高度な映像解析やネットワークカメラ機能を活用し、防犯だけでなく来店分析・異常検知などにも展開しやすいメーカーです。</p>
+              <a class="maker-link" href="https://www.axis.com/ja-jp/products" target="_blank" rel="noopener">公式サイトを見る</a>
+            </article>
+
+            <article class="maker-card">
+              <header>
+                <div>
+                  <h3>i-PRO</h3>
+                  <p>日本国内メーカー。コンプライアンス重視の案件に。</p>
+                </div>
+                <span class="badge badge-amber">国内メーカー</span>
+              </header>
+              <p>官公庁、医療、金融、学校など、社内規程や調達基準を重視する施設で検討しやすい国内ブランドです。</p>
+              <a class="maker-link" href="https://i-pro.com/products_and_solutions/ja/surveillance" target="_blank" rel="noopener">公式サイトを見る</a>
+            </article>
+
+            <article class="maker-card">
+              <header>
+                <div>
+                  <h3>Hikvision</h3>
+                  <p>世界大手。安価で見守り目的に向く選択肢。</p>
+                </div>
+                <span class="badge">価格重視</span>
+              </header>
+              <p>機種数が多く、機能と価格のバランスを取りやすいメーカーです。小規模店舗や事務所の見守り用途にも適しています。</p>
+              <a class="maker-link" href="https://www.hikvisionjapan.com/" target="_blank" rel="noopener">公式サイトを見る</a>
+            </article>
+
+            <article class="maker-card">
+              <header>
+                <div>
+                  <h3>Dahua</h3>
+                  <p>世界大手。コストを抑えた構成に。</p>
+                </div>
+                <span class="badge">価格重視</span>
+              </header>
+              <p>屋外・夜間撮影などを含む幅広いラインナップがあり、見守り中心で導入費を抑えたい案件で検討します。</p>
+              <a class="maker-link" href="https://www.dahuasecurity.com/Japan" target="_blank" rel="noopener">公式サイトを見る</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spec">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CAMERA & RECORDER</p>
+            <h2>画質・カメラ形状・録画方式をまとめて設計します。</h2>
+          </div>
+          <p class="section-copy">
+            同じカメラ台数でも、入口を撮るのか、レジを撮るのか、駐車場を撮るのかで必要な機種は変わります。録画保存期間もあわせて確認します。
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <article class="spec-panel">
+            <h3>画質の目安</h3>
+            <p>広範囲の見守りはフルHD、顔や車両ナンバーなど細部を残したい場所は4Kを検討します。</p>
+            <div class="quality-row">
+              <div class="quality-box">
+                <strong>Full HD</strong>
+                <span>地デジ相当。標準的な見守り向き。</span>
+              </div>
+              <div class="quality-box">
+                <strong>4K</strong>
+                <span>ブルーレイ相当。証拠記録向き。</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="spec-panel spec-panel-dark">
+            <h3>レコーダーのタイプ</h3>
+            <p>LAN配線型はNVR、同軸方式はDVRまたはXVRを選定します。カメラ台数、保存日数、遠隔監視、マイク設定、通知設定などを現場に合わせて調整します。</p>
+          </article>
+        </div>
+
+        <div class="camera-matrix">
+          <div class="matrix-group">
+            <div class="matrix-title">標準仕様</div>
+            <div class="matrix-item">
+              <span class="type-mark">B</span>
+              <div><strong>バレット型</strong><span>屋外や入口に。見えていること自体が抑止につながります。</span></div>
+            </div>
+            <div class="matrix-item">
+              <span class="type-mark">D</span>
+              <div><strong>ドーム型</strong><span>天井設置に。店内や事務所で目立ちにくく設置できます。</span></div>
+            </div>
+            <div class="matrix-item">
+              <span class="type-mark">P</span>
+              <div><strong>PTZ型</strong><span>パン・チルト・ズームで広範囲を確認できます。</span></div>
+            </div>
+          </div>
+
+          <div class="matrix-group">
+            <div class="matrix-title">特殊仕様</div>
+            <div class="matrix-item">
+              <span class="type-mark">T</span>
+              <div><strong>望遠カメラ</strong><span>駐車場、敷地境界、離れた入口などを狙って撮影します。</span></div>
+            </div>
+            <div class="matrix-item">
+              <span class="type-mark">S</span>
+              <div><strong>小型カメラ</strong><span>狭い場所や目立たせたくない場所に向きます。</span></div>
+            </div>
+            <div class="matrix-item">
+              <span class="type-mark">360</span>
+              <div><strong>パノラマカメラ</strong><span>1台で広い範囲を見渡し、死角を減らします。</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="wiring">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">WIRING METHOD</p>
+            <h2>配線方式は、将来の拡張性まで見て選びます。</h2>
+          </div>
+          <p class="section-copy">
+            新規導入やAI活用を見据える場合はLAN配線型が主流です。既存の同軸ケーブルを活かす場合や少台数で費用を抑える場合は同軸方式も候補になります。
+          </p>
+        </div>
+
+        <div class="comparison" aria-label="配線方式比較">
+          <div class="comparison-row">
+            <div class="row-head">項目</div>
+            <div>LAN配線型 / PoE</div>
+            <div>同軸方式</div>
+          </div>
+          <div class="comparison-row">
+            <div class="row-head">ケーブル</div>
+            <div>ネットワークケーブルで映像と電源を1本にまとめて供給します。</div>
+            <div>同軸ケーブルを使用。標準は映像と電源を分け、PoC対応機器なら1本化も可能です。</div>
+          </div>
+          <div class="comparison-row">
+            <div class="row-head">向いている構成</div>
+            <div>台数が多い、階をまたぐ、AIや遠隔監視を使う、将来増設したい場合。</div>
+            <div>既存配線を活かしたい、少台数で安く構築したい、基本録画が中心の場合。</div>
+          </div>
+          <div class="comparison-row">
+            <div class="row-head">拡張性</div>
+            <div>高い。ネットワーク機器と組み合わせて複雑な構成にも対応しやすい方式です。</div>
+            <div>限定的。昔からある方式のため、最新機能や大規模化には不向きな場合があります。</div>
+          </div>
+          <div class="comparison-row">
+            <div class="row-head">AI・高機能</div>
+            <div>最新のAI機能や高解像度カメラを使う場合に適しています。</div>
+            <div>見守り・録画中心。AI活用を重視する場合はLAN配線型を推奨します。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="construction">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CONSTRUCTION</p>
+            <h2>工事は、見た目と耐久性まで考えて行います。</h2>
+          </div>
+          <p class="section-copy">
+            壁面、天井、天井裏、パイプスペースなどを確認し、できるだけ露出が少ない経路を選びます。露出部や屋外は材料を選び、配線を保護します。
+          </p>
+        </div>
+
+        <div class="flow">
+          <article class="flow-step">
+            <span class="step-index">STEP 01</span>
+            <h3>通線工事</h3>
+            <p>カメラとレコーダーをつなぎ、映像と電源を供給する配線工事です。露出を抑え、必要に応じて保護材を使用します。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">STEP 02</span>
+            <h3>カメラ取付</h3>
+            <p>コンクリート、石膏ボード、天井材など、設置面の素材に合わせて適切に固定します。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">STEP 03</span>
+            <h3>画角調整</h3>
+            <p>設置後に映像を確認しながら、入口、レジ、通路、駐車場など必要な範囲が映るよう調整します。</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">STEP 04</span>
+            <h3>レコーダー設定</h3>
+            <p>カメラごとの画質、マイク、録画スケジュール、遠隔監視などを利用方法に合わせて設定します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="warranty">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">WARRANTY</p>
+            <h2>導入後も使い続けられるよう、保証まで用意しています。</h2>
+          </div>
+          <p class="section-copy">
+            標準保証に加え、納品時のみ加入できる延長保証をご用意しています。長期運用が必要な店舗・施設でも安心して導入いただけます。
+          </p>
+        </div>
+
+        <div class="warranty-grid">
+          <article class="warranty-card">
+            <span class="warranty-meta">標準保証</span>
+            <h3>機器取付から1年間</h3>
+            <p>機器と施工の保証があります。HDDなどの消耗品や経年劣化を除き、初期不良や施工起因の不具合に対応します。</p>
+          </article>
+          <article class="warranty-card warranty-feature">
+            <span class="warranty-meta">延長保証オプション</span>
+            <h3>最長5年間の延長保証</h3>
+            <p>納品時のみ加入できます。長期間の運用を前提とした施設や、保守予算を平準化したい場合におすすめです。</p>
+            <div class="price-list">
+              <div class="price-item">
+                <span>レコーダー / 1台</span>
+                <strong class="price">1,200円/月〜</strong>
+              </div>
+              <div class="price-item">
+                <span>カメラ / 1台</span>
+                <strong class="price">800円/月〜</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="notice">表示価格はすべて税抜きです。実際の金額は、機種・台数・設置場所・録画保存期間・工事内容により変わります。</div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta-inner">
+        <div>
+          <p class="section-kicker">CONTACT</p>
+          <h2>現地調査・お見積もりからご相談ください。</h2>
+          <p>目的と現場条件を確認したうえで、過剰でも不足でもない構成をご提案します。店舗、事務所、倉庫、駐車場、施設など幅広く対応します。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="tel:0120695550">電話する</a>
+            <a class="button button-ghost" href="#top">資料トップへ戻る</a>
+          </div>
+        </div>
+
+        <div class="contact-block" aria-label="お問い合わせ情報">
+          <div class="contact-cell contact-cell-wide">
+            <div class="contact-label">提供会社</div>
+            <div class="contact-value">株式会社ニコニコテクノサービス</div>
+          </div>
+          <div class="contact-cell contact-cell-wide">
+            <div class="contact-label">フリーダイヤル</div>
+            <div class="contact-value contact-value-large">0120-69-5550</div>
+          </div>
+          <div class="contact-cell">
+            <div class="contact-label">営業時間</div>
+            <div class="contact-value">平日 9:00-17:00</div>
+          </div>
+          <div class="contact-cell">
+            <div class="contact-label">資料URL</div>
+            <div class="contact-value">cam.pc2525.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div><strong>株式会社ニコニコテクノサービス</strong></div>
+      <div>防犯カメラ ご提案資料</div>
+    </div>
+  </footer>
+</body>
+</html>
